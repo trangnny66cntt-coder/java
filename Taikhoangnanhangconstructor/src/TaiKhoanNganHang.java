@@ -1,7 +1,7 @@
 public class TaiKhoanNganHang {
     private String soTaiKhoan;
     private String tenChuTaiKhoan;
-    private double soDu
+    private double soDu;
 
     // Constructor 1: Chỉ có số tài khoản
     public TaiKhoanNganHang(String soTaiKhoan) {
