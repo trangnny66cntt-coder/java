@@ -6,7 +6,7 @@ public class MainSinhVien {
         sv1.setTuoi(20);
         sv1.setMaSV("SV001");
         sv1.setDiemTB(8.5);
-        sv1.hienThiThongTin()
+        sv1.hienThiThongTin();
 
         System.out.println("\n---\n");
         // Tạo sinh viên với constructor có tham số
