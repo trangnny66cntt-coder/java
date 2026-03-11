@@ -14,7 +14,7 @@ public class TaiKhoanNganHang {
     public TaiKhoanNganHang(String soTaiKhoan, String tenChuTaiKhoan) {
         this.soTaiKhoan = soTaiKhoan;
         this.tenChuTaiKhoan = tenChuTaiKhoan;
-        this.soDu = 0.0
+        this.soDu = 0.0;
     }
 
     // Constructor 3: Đầy đủ thông tin
