@@ -3,7 +3,7 @@ public class SinhVien {
     private String ten;
     private int tuoi;
     private String maSV;
-    private double diemTB
+    private double diemTB;
     // Constructor mặc định
     public SinhVien() {
         this.ten = "Chưa có tên";
