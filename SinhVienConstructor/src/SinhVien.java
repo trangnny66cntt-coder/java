@@ -58,7 +58,7 @@ public class SinhVien {
         } else {
             System.out.println("Mã SV phải bắt đầu bằng 'SV'");
         }
-    
+    }
 
     public void setDiemTB(double diemTB) {
         if (diemTB >= 0.0 && diemTB <= 10.0) {
