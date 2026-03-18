@@ -20,7 +20,7 @@ class SinhVien {
     
     @Override
     public String toString() {
-        return String.format("Mã: 
+        return String.format("Mã: %s  | Họ tên: %s | Diểm: %.2f" , maSV, hoTen, diemTB);
     }
 }
 //Lớp quản lý sinh viên sử dụng ArrayList
@@ -156,6 +156,24 @@ public class MainQuanLySinhVien {
 	        
 	        // Hiển thị danh sách
 	        qlsv.hienThiDanhSach();
+	        // Tìm sinh viên
+	        System.out.println("\n=== TÌM KIẾM SINH VIÊN ===");
+	        SinhVien sv = qlsv.timTheoMa("SV003");
+	        System.out.println("Tìm SV003: " + (sv != null ? sv : "Không tìm thấy"));
+	        
+	        // Tìm điểm cao nhất
+	        System.out.println("\n=== SINH VIÊN ĐIỂM CAO NHẤT ===");
+	        SinhVien svCaoNhat = qlsv.timDiemCaoNhat();
+	        System.out.println(svCaoNhat != null ? svCaoNhat : "Không có sinh viên");
+	        
+	        // Tính điểm trung bình lớp
+	        System.out.println("\n=== ĐIỂM TRUNG BÌNH LỚP ===");
+	        double dtb = qlsv.tinhDiemTrungBinhLop();
+	        System.out.printf("Điểm TB lớp: %2f\n" , dtb);
+	        
+	       
+	    }
+	
 	}
 
-}
+
