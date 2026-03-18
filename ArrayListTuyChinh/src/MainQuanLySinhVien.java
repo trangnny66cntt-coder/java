@@ -109,14 +109,12 @@ public class QuanLySinhVien {
      }
      
      System.out.println("\n=== DANH SÁCH SINH VIÊN ===");
-     System.out.println(String.format("
-         "STT", "Mã SV", "Họ tên", "Điểm TB"));
+     System.out.println(String.format("STT", "Mã SV", "Họ tên", "Điểm TB"));
      System.out.println("=".repeat(50));
      
      for (int i = 0; i < danhSachSV.size(); i++) {
          SinhVien sv = danhSachSV.get(i);
-         System.out.println(String.format("
-             i + 1, sv.getMaSV(), sv.getHoTen(), sv.getDiemTB()));
+         System.out.println(String.format(" i + 1, sv.getMaSV(), sv.getHoTen(), sv.getDiemTB()"));
      }
  }
  
@@ -145,8 +143,19 @@ public class QuanLySinhVien {
 public class MainQuanLySinhVien {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		 System.out.println("=== HỆ THỐNG QUẢN LÝ SINH VIÊN VỚI ARRAYLIST ===\n");
+	        
+	        QuanLySinhVien qlsv = new QuanLySinhVien();
+	        
+	        // Thêm sinh viên
+	        qlsv.themSinhVien(new SinhVien("SV001", "Nguyễn Văn A", 8.5));
+	        qlsv.themSinhVien(new SinhVien("SV002", "Trần Thị B", 7.2));
+	        qlsv.themSinhVien(new SinhVien("SV003", "Lê Văn C", 6.8));
+	        qlsv.themSinhVien(new SinhVien("SV004", "Phạm Thị D", 9.1));
+	        qlsv.themSinhVien(new SinhVien("SV005", "Hoàng Văn E", 5.5));
+	        
+	        // Hiển thị danh sách
+	        qlsv.hienThiDanhSach();
 	}
 
 }
