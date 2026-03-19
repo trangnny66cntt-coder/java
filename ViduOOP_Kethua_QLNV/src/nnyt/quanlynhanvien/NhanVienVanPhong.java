@@ -5,13 +5,13 @@ private double soGioLamThem;
 private double luongThemMoiGio;
 // Hàm tạo
 public NhanVienVanPhong(String maNV, String hoTen, double LuongCoBan, double soGioLamThem, double LuongThemMoiGio) {
-super(maNV, hoTen, luongCoBan);
+super(maNV, hoTen, LuongCoBan);
 this.soGioLamThem = soGioLamThem;
 this.luongThemMoiGio = luongThemMoiGio;
  }
 @Override
 public double tinhLuong() {
-	return super.  getluongCoBan() + soGioLamThem*luongThemMoiGio;
+	return super.getLuongCoBan() + soGioLamThem*luongThemMoiGio;
 }
 public void hienThiThongTin() {
 	super.hienThiThongTin();
@@ -25,5 +25,5 @@ public String toString() {
 	chuoiXuat = chuoiXuat + "\nLương cho mỗi giờ làm thêm: " + luongThemMoiGio;
 	chuoiXuat = chuoiXuat + "\nLương được nhận: " + tinhLuong();
 	return chuoiXuat;
-
+}
 }

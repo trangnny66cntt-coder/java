@@ -29,11 +29,35 @@ public double tinhLuong() {
 }
 @Override
 public String toString() {
-	return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
+	String chuoiXuat= "";
+	chuoiXuat = chuoiXuat + "Mã NV: " + this.maNV;
+	chuoiXuat = chuoiXuat + "Họ Tên: " + this.hoTen;
+	chuoiXuat = chuoiXuat + "Lương cơ bản: " + this.luongCoBan;
+	return chuoiXuat;
 }
 public void hienThiThongTin() {
 	System.out.println("Mã NV: " + maNV);
 	System.out.println("Họ tên: " + hoTen);
 	System.out.println("Lương cơ Bản: " + luongCoBan);
 }
+//cac getter/setter
+public String getMaNV() {
+	return maNV;
+}
+public void setMaNV(String maNV) {
+	this.maNV = maNV;
+}
+public String getHoTen() {
+	return hoTen;
+}
+public void setHoTen(String hoTen) {
+	this.hoTen = hoTen;
+}
+public double getLuongCoBan() {
+	return luongCoBan;
+}
+public void setLuongCoBan(double luongCoBan) {
+	this.luongCoBan = luongCoBan;
+}
+
 }
