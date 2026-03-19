@@ -34,6 +34,7 @@ public String toString() {
 	chuoiXuat = chuoiXuat + "Họ Tên: " + this.hoTen;
 	chuoiXuat = chuoiXuat + "Lương cơ bản: " + this.luongCoBan;
 	return chuoiXuat;
+	//return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
 }
 public void hienThiThongTin() {
 	System.out.println("Mã NV: " + maNV);
