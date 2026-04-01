@@ -1,4 +1,4 @@
-package ntunguyenngocyentrang;
+package ntu.nguyenngocyentrang;
 
 public class HocSinh {
 	private String tenHS;
@@ -32,6 +32,11 @@ public class HocSinh {
 	}
 	public void setLopHS(String lopHS) {
 		this.lopHS = lopHS;
+	}
+
+	@Override
+	public String toString() {
+		return "HocSinh [tenHS=" + tenHS + ", tuoiHS=" + tuoiHS + ", lopHS=" + lopHS + "]";
 	}
 	
 
